@@ -1,304 +1,21 @@
 #include<iostream>
 #include<fstream>
+#include<conio.h>
 #include<stdlib.h>
 #include<string.h>
 #include<stdio.h>
 #include<stdlib.h>
 
+
+
+
 using namespace std;
+#include "cosmetics.h"
+#include "grocery.h"
+#include "dailyuse.h"
 
-class grocery
-{
 
-char name[30];
-float price;
-int code,qty;
 
-public:
-    void init(void)
-    {
-
-
-
-
-    cout<<"enter the name of product"<<endl;
-    cin>>name;
-
-    cout<<"enter the code of product"<<endl;
-    cin>>code;
-
-    cout<<"enter the price of product"<<endl;
-    cin>>price;
-
-    cout<<"enter the quantity of product"<<endl;
-    cin>>qty;
-    }
-
-        void modify(void)
-        {
-        char nm[30];
-
-        cout<<"enter new name"<<endl;
-        cout<<"if no change press  '.'  "<<endl;
-        cin>>nm;
-
-        if(strcmp(nm," . ")!=0)
-        {
-            strcpy(name,nm);
-        }
-
-        int newcode;
-        cout<<"enter new code"<<endl;
-        cout<<"if no change in code press 0 "<<endl;
-        cin>>newcode;
-
-        if(newcode!=0)
-        {
-          code=newcode;
-        }
-
-         float newprice;
-         cout<<"enter new price"<<endl;
-         cout<<"if no change in price press 0 "<<endl;
-         cin>>newprice;
-
-        if(newprice!=0)
-        {
-          price=newprice;
-        }
-
-         int newqty;
-         cout<<"enter new quantity"<<endl;
-         cout<<"if no change in quantity press 0 "<<endl;
-         cin>>newqty;
-
-         if(newqty!=0)
-        {
-          qty=newqty;
-        }
-
-        }
-
-        int getcode(void)
-        {
-            return code;
-        }
-
-        int getqty(void)
-        {
-            return qty;
-        }
-
-        float getprice(void)
-        {
-            return price;
-        }
-
-void print(void)
-{
-  cout<<"product name:"<<name<<endl;
-  cout<<"product code:"<<code<<endl;
-  cout<<"price:"<<price<<endl;
-  cout<<"product stock available:"<<qty<<endl;
-}
-
-};
-
-
-
-class cosmetics
-{
-
-char name[30];
-float price;
-int code,qty;
-
-public:
-    void init(void)
-    {
-
-
-
-    cout<<"enter the name of product"<<endl;
-    cin>>name;
-
-    cout<<"enter the code of product"<<endl;
-    cin>>code;
-
-    cout<<"enter the price of product"<<endl;
-    cin>>price;
-
-    cout<<"enter the quantity of product"<<endl;
-    cin>>qty;
-    }
-
-        void modify(void)
-        {
-        char nm[30];
-
-        cout<<"enter new name"<<endl;
-        cout<<"if no change press  '.'  "<<endl;
-        cin>>nm;
-
-        if(strcmp(nm," . ")!=0)
-        {
-            strcpy(name,nm);
-        }
-
-        int newcode;
-        cout<<"enter new code"<<endl;
-        cout<<"if no change in code press 0 "<<endl;
-        cin>>newcode;
-
-        if(newcode!=0)
-        {
-          code=newcode;
-        }
-
-         float newprice;
-         cout<<"enter new price"<<endl;
-         cout<<"if no change in price press 0 "<<endl;
-         cin>>newprice;
-
-        if(newprice!=0)
-        {
-          price=newprice;
-        }
-
-         int newqty;
-         cout<<"enter new quantity"<<endl;
-         cout<<"if no change in quantity press 0 "<<endl;
-         cin>>newqty;
-
-         if(newqty!=0)
-        {
-          qty=newqty;
-        }
-
-        }
-
-        int getcode(void)
-        {
-            return code;
-        }
-
-        int getqty(void)
-        {
-            return qty;
-        }
-
-        float getprice(void)
-        {
-            return price;
-        }
-
-void print(void)
-{
-  cout<<"product name:"<<name<<endl;
-  cout<<"product code:"<<code<<endl;
-  cout<<"price:"<<price<<endl;
-  cout<<"product stock available:"<<qty<<endl;
-}
-
-};
-
-
-
-class dailyuse
-{
-
-char name[30];
-float price;
-int code,qty;
-
-public:
-    void init(void)
-    {
-
-
-
-    cout<<"enter the name of product"<<endl;
-    cin>>name;
-
-    cout<<"enter the code of product"<<endl;
-    cin>>code;
-
-    cout<<"enter the price of product"<<endl;
-    cin>>price;
-
-    cout<<"enter the quantity of product"<<endl;
-    cin>>qty;
-    }
-
-        void modify(void)
-        {
-        char nm[30];
-
-        cout<<"enter new name"<<endl;
-        cout<<"if no change press  '.'  "<<endl;
-        cin>>nm;
-
-        if(strcmp(nm," . ")!=0)
-        {
-            strcpy(name,nm);
-        }
-
-        int newcode;
-        cout<<"enter new code"<<endl;
-        cout<<"if no change in code press 0 "<<endl;
-        cin>>newcode;
-
-        if(newcode!=0)
-        {
-          code=newcode;
-        }
-
-         float newprice;
-         cout<<"enter new price"<<endl;
-         cout<<"if no change in price press 0 "<<endl;
-         cin>>newprice;
-
-        if(newprice!=0)
-        {
-          price=newprice;
-        }
-
-         int newqty;
-         cout<<"enter new quantity"<<endl;
-         cout<<"if no change in quantity press 0 "<<endl;
-         cin>>newqty;
-
-         if(newqty!=0)
-        {
-          qty=newqty;
-        }
-
-        }
-
-        int getcode(void)
-        {
-            return code;
-        }
-
-        int getqty(void)
-        {
-            return qty;
-        }
-
-        float getprice(void)
-        {
-            return price;
-        }
-
- void print(void)
-{
-  cout<<"product name:"<<name<<endl;
-  cout<<"product code:"<<code<<endl;
-  cout<<"price:"<<price<<endl;
-  cout<<"product stock available:"<<qty<<endl;
-}
-
-};
 
 
 
@@ -320,7 +37,7 @@ int length_str(char *s)
 
 
 
-void encrypt1(char *password)
+void encrypt1(char *password)               //function for password encryption.
 
 {
 
@@ -362,7 +79,8 @@ void encrypt1(char *password)
 
 }
 
-int main()
+
+int main()                       //main function begins.
 {
 
 
@@ -406,7 +124,7 @@ float bill;
 
     else if(choice==1)
       {
-	 if(flag==0)
+	 if(flag==0)                                     //flag is a variable which checks whether shop is initialized or not.
 	   {
 	      initialization:
 
@@ -421,10 +139,10 @@ float bill;
 	      switch(choicestart)
 		     {
 
-		       case 1:   cout<<"how many items?"<<endl;
+		       case 1:   cout<<"how many items?"<<endl;              //grocery initialization.
 				 cin>>grocitem;
 				 grocery gcy[100];
-				 groc.open("groceryfile",ios::out|ios::binary);
+				 groc.open("groceryfile",ios::out|ios::binary);      //data file being created and loaded with data.
 				 for(int i=0;i<grocitem;i++)
 				    {
 				        cout<<"enter details of item no: "<<i+1<<endl;
@@ -440,10 +158,10 @@ float bill;
 				 break;
 
 
-		       case 2:   cout<<"how many items?"<<endl;
+		       case 2:   cout<<"how many items?"<<endl;                      //cosmetics initialization.
 				 cin>>cositem;
 				 cosmetics csm[100];
-				 cosm.open("cosmeticsfile",ios::out|ios::binary);
+				 cosm.open("cosmeticsfile",ios::out|ios::binary);           //data file being created and loaded with data.
 				 for(int j=0;j<cositem;j++)
 				     {
 				         cout<<"enter details of item no: "<<j+1<<endl;
@@ -460,10 +178,10 @@ float bill;
 				  break;
 
 
-		       case 3:    cout<<"how many items?"<<endl;
+		       case 3:    cout<<"how many items?"<<endl;                  //daily use items being initialized.
 				  cin>>dlyitem;
 				  dailyuse dail[100];
-				  daily.open("dailyusefile",ios::out|ios::binary);
+				  daily.open("dailyusefile",ios::out|ios::binary);       //data file being created and loaded with data.
 				  for(int k=0;k<dlyitem;k++)
 				      {
 				          cout<<"enter details of item no: "<<k+1<<endl;
@@ -489,33 +207,32 @@ float bill;
 
 
 
-	      if(flag1==0||flag2==0||flag3==0)
-		{ goto initialization;
+	      if(flag1==0||flag2==0||flag3==0)                     //if all three items are initialized then flag is incremented.
+		{ goto initialization;                                //flag1 flag2 and flag3 check the initialization of all three categories.
 		}
 	      else flag++;
-	      goto start;
 
 
-	   }
+	   }goto start;
 
 
-	 else if(flag!=0)
+	  if(flag!=0)
 	       {
 	           modification:
-		 cout<<"enter the category that you want to modify:"<<endl;
+		 cout<<"enter the category that you want to modify:"<<endl;          //after items are initialized the customer can enter the modification menu.
 		 cout<<"1.grocery"<<endl;
 		 cout<<"2.cosmetics"<<endl;
 		 cout<<"3.daily use items"<<endl;
 
 		 cin>>choicemod;
 
-	if(choicemod!=1&&choicemod!=2&&choicemod!=3)
+	if(choicemod!=1&&choicemod!=2&&choicemod!=3)                       //check for wrong choice.
     {
         cout<<"WRONG CHOICE!"<<endl;
         goto modification;
     }
 
-    else if(choicemod==1)
+    else if(choicemod==1)                                          //modification of grocery.
     {
 
         cout<<"do you want to:"<<endl;
@@ -527,9 +244,7 @@ float bill;
 
         switch(choice3)
         {
-            case 1: {
-
-                    while(response1=='y'||response1=='Y')
+            case 1:  while(response1=='y'||response1=='Y')
                       {
 
 
@@ -553,7 +268,6 @@ float bill;
                      cin>>response1;
                       }
                      break;
-                     }
 
 
             case 2:  while(response2=='y'||response2=='Y')
@@ -584,10 +298,9 @@ float bill;
 
                          cout<<"want to delete more items(y/n)"<<endl;
                          cin>>response2;
-                         break;
                      }
 
-
+                     break;
 
 
             case 3:  while(response3=='y'||response3=='Y')
@@ -612,12 +325,11 @@ float bill;
                          groc.close();
                          cout<<"want to modify more items(y/n)?"<<endl;
                          cin>>response3;
-                         break;
 
 
                      }
 
-
+                     break;
 
 
         }
@@ -626,8 +338,7 @@ float bill;
 
     }
 
-
-    else if(choicemod==2)
+    else if(choicemod==2)                                          //modification of cosmetics.
     {
         cout<<"do you want to:"<<endl;
         cout<<"1.add item:"<<endl;
@@ -730,8 +441,7 @@ float bill;
 
     }
 
-
-    else if(choicemod==3)
+    else if(choicemod==3)                                           //modification of dailyuse items.
     {
       cout<<"do you want to:"<<endl;
         cout<<"1.add item:"<<endl;
@@ -835,7 +545,6 @@ float bill;
     }
 
 
-
     cout<<"want to do more modification(y/n)?"<<endl;
     cin>>choice4;
     if(choice4=='y'||choice4=='Y')
@@ -864,7 +573,7 @@ float bill;
 
       else
       {
-          customermenu:
+          customermenu:                                                //customer menu begins.
 
           cout<<"enter the category:"<<endl;
           cout<<"1.grocery"<<endl;
@@ -902,7 +611,7 @@ float bill;
                while(!groc.eof())
                {
                    grocery gcy2;
-                   groc.read((char*)&gcy2,sizeof(gcy2));
+                   groc.read((char*)&gcy2,sizeof(gcy2));                          //bill production and checking of stock quantity.
                    if(gcy2.getcode()==code7)
                    {
                     if(gcy2.getqty()>=qty1)
